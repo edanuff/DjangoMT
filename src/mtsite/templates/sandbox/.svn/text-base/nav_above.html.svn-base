@@ -1,8 +1,0 @@
-			<div id="nav-above" class="navigation">
-{% if page_obj.has_next %}
-				<a href="{{ page_path }}page/{{ page_obj.next_page_number }}/"><div class="nav-previous"><span class="meta-nav">&laquo;</span> Older posts</div></a>
-{% endif %}
-{% if page_obj.has_previous %}
-				<a href="{{ page_path }}page/{{ page_obj.previous_page_number }}/"><div class="nav-next">Newer posts <span class="meta-nav">&raquo;</span></div></a>
-{% endif %}
-			</div>
