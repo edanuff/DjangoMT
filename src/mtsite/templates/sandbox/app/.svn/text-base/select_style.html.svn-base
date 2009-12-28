@@ -1,0 +1,39 @@
+{% extends "sandbox/base.html" %}
+
+{% block head %}
+<style type="text/css">
+.style-item {
+	width: 100%;
+	text-align: center;
+	margin-top: 3em;
+	margin-bottom: 2em;
+}
+</style>
+{% endblock %}
+
+{% block body-css %}wordpress {% now "\yY \mm \dd \hH" %} page  page-style_select {% now "\p\-\yY \p\-\mm \p\-\dd \p\-\hH" %}{% endblock %}
+
+{% block title %}{{ blog.name }}{% endblock %}
+
+{% block content %}
+
+			<div id="post-style_select class="hentry p1 page publish {% now "\yY \mm \dd \hH" %}">
+				<h2 class="entry-title">Select Style</h2>
+				<div class="entry-content"><p>
+
+{% load mt_tags %}
+{% mt_style_list as blog_styles %}
+{% if blog_styles %}
+{% for blog_style in blog_styles %}
+					<div class="style-item style-{{ blog_style }}">
+						<p class="style-item-screenshot"><a href="{{ blog_path }}app/select_style.html?style={{ blog_style }}" title="{{ blog_style }}"><img src="{{ blog_path }}styles/{{ blog_style }}/screenshot.png" /></a></p>
+						<p class="style-item-caption"><a href="{{ blog_path }}app/select_style.html?style={{ blog_style }}" title="{{ blog_style }}">{{ blog_style }}</a></p>
+					</div>
+{% endfor %}
+{% endif %}
+
+				</div>
+
+			</div><!-- .post -->
+
+{% endblock %}

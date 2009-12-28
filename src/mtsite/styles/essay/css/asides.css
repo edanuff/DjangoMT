@@ -1,0 +1,15 @@
+/*
+	My version of Andy's Sandbox CSS asides http://en.forums.wordpress.com/topic.php?id=3390&page
+*/
+body.home div.category-asides * {display:inline;}body.home div.category-asides h2.entry-title,body.home div.category-asides div.entry-date,body.home div.category-asides span.author,body.home div.category-asides span.cat-links,body.home div.category-asides span.meta-sep {display:none;}
+body.home div.category-asides blockquote {
+	margin:0;
+}
+body.home div.category-asides {
+}
+body.home div.category-asides + div.category-asides {
+	margin-top:-28px;
+}
+
+
+	

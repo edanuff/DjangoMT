@@ -1,0 +1,31 @@
+/*
+	Basic sandbox 2 column structure for 960px grid
+*/
+#wrapper {
+	margin:0 auto;
+	width:960px;
+}
+#container {
+	float: left;
+	margin: 0;
+	width: 645px;
+}
+#content {
+	margin-left: 74px;
+	width: 556px;
+	overflow: hidden;
+}
+.sidebar {
+	float: right;
+	overflow: hidden;
+	width: 246px;
+}
+#secondary	{
+	clear: right;
+}
+#footer {
+	clear: both;
+}
+.entry-content img {
+	max-width:100%;
+}

@@ -1,0 +1,19 @@
+/*
+THEME NAME: Essay
+THEME URI: http://upperfortstewart.com/essay-sandbox-wordpress-theme/
+VERSION: 1.0
+DESCRIPTION: An essay into the Sandbox designs competition
+AUTHOR: Ian Stewart
+AUTHOR URI: http://upperfortstewart.com/about
+TEMPLATE: sandbox
+*/
+
+@import url(css/reset.css);
+@import url(css/type.css);
+@import url(css/structure.css);
+@import url(css/theme.css);
+@import url(css/asides.css);
+@import url(css/extra.css);
+
+
+/*#wrapper {background:white url('images/28px-baseline-grid.png');}*/

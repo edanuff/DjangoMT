@@ -1,0 +1,261 @@
+/*
+THEME NAME: The Blue Butterfly Layout
+THEME URI: http://ntuat.wordpress.com/
+DESCRIPTION: Somebody went a bit mad with the soft focus filter
+VERSION: 1.0
+AUTHOR: Carolyn Smith
+AUTHOR URI: http://not-that-ugly.co.uk/
+TEMPLATE: sandbox
+*/
+
+body {margin:0;
+padding:0; 
+background:#dafec1;
+color:#333;
+font:0.75em arial, sans-serif;
+line-height:1.4em;
+letter-spacing:0.05em}
+
+#wrapper {width:800px;
+padding:0;
+margin:auto;
+background:url(images/contentbk.png) top right repeat-y
+}
+
+#container {float:right;
+width:606px;
+background:url(images/contentheader.jpg) no-repeat;
+
+}
+
+#content {width:506px;
+padding:250px 0px 10px 15px;}
+
+#access, #nav-above {display:none} 
+
+
+/* common xhtml elements and formatting*/
+
+a {color:#5C95FD;
+text-decoration:none}
+
+a:hover {text-decoration:underline}
+
+blockquote, code, input, pre, textarea {background:url(images/'blockbk.png') top center repeat-y;}
+
+blockquote blockquote {background:#fff;
+border:#6bf 1px solid;
+padding:7px}
+
+.caps {font-variant:small-caps}
+
+pre {width:99%;
+font-size:1.2em;
+overflow:auto}
+
+del, s {color:#75A149}
+
+dt {font-weight:bold;
+color:#75A149;
+margin-top:5px}
+
+h3 {font-size:1.2em}
+
+h3, h4, h5, h6 {
+color:#75A149;
+border-bottom:#6bf 1px dotted}
+
+.important {font-variant:small-caps;
+font-weight:bold;
+color:#55c}
+
+input, textarea {border:#6bf 1px solid;
+color:#333;
+font: 1em arial, sans-serif;
+letter-spacing:0.05em}
+
+pre {width:90%;
+font-size:1.2em;
+overflow:auto}
+
+textarea {padding:7px}
+
+textarea:focus {background:#dafec1 url(images/butterflydot.gif) top right no-repeat}
+
+#content ul {list-style-image:url(images/butterflydot.gif)}
+
+#content ul li ul li{list-style:disc;
+color:#75A149;}
+
+
+
+
+/* header stuff */
+#header {background:#dafec1}
+
+#header h1 {margin:0;
+padding-top:20px;
+font-size:3em;
+font-weight:normal;
+letter-spacing:0.1em}
+
+#header h1 a, .entry-title a, .sidebar a {text-decoration:none}
+
+#blog-description {margin-top:1em;
+font-style:italic;
+color:#75A149}
+
+
+
+/* post and page titles */
+h2 {margin:0 0 5px 0;
+font-size:1.4em;
+letter-spacing:0.1em;
+color:#75A149;}
+
+h2.entry-title a:hover {border-bottom:#6bf 1px solid}
+
+
+
+/*dates */
+.entry-date {color:#75A149;
+font-weight:bold}
+
+abbr.published {border:0}
+
+
+/* meta-ness */
+.entry-meta {
+background: url(images/divider.gif) bottom center no-repeat;
+font-size:0.9em;
+padding-bottom:40px;
+margin-bottom:15px;
+clear:both}
+
+.entry-meta a {text-decoration:none}
+
+
+/* getting asides to LOOK like asides */
+div.category-asides .entry-title, 
+div.category-asides .entry-date,
+div.category-asides .author, 
+div.category-asides .meta-sep,
+div.category-asides .cat-links  
+{display:none}
+
+
+
+/* prev/next links */
+#nav-below {text-align:center;
+width:490px;
+padding-bottom:20px}
+
+.nav-previous {float:left;
+text-align:left;
+padding-left:20px;
+background:url(images/leftarrow.gif) center left no-repeat;
+width:210px}
+
+.nav-next {float:right;
+text-align:right;
+padding-right:20px;
+background:url(images/rightarrow.gif) center right no-repeat;
+width:210px;}
+
+.meta-nav {display:none}
+
+
+/* comments */
+
+#comments-list ol, #trackbacks-list ol {list-style:none;
+margin:0;
+padding:0}
+
+.comment, .trackback {border-bottom:#6bf 1px dotted;
+margin-bottom:1em}
+
+#comments-list .comment-author, .comment-author a {font-weight:bold}
+
+.comment-meta {font-size:0.9em}
+
+.bypostauthor { border:#6bf 1px dotted;
+background:#dafec1;
+padding:7px;
+}
+
+
+
+/* sidebar stuff */
+.sidebar {_float:left;
+width:194px;
+padding-top:250px;
+}
+
+
+#primary {background: url(images/sidebarheader.png) no-repeat;
+border-bottom:3px #6bf solid}
+
+#secondary {background:url(images/sidebarheader2.png) no-repeat;}
+
+.sidebar ul {margin:0;
+padding:0 7px 10px 7px;
+list-style:none}
+
+.sidebar h3 {margin:10px 0 5px 0;
+padding:0 7px 0 7px;
+}
+
+
+/* calendar */
+
+#calendar h3 {display:none}
+
+#wp-calendar {width:180px}
+
+#wp-calendar caption {font-size:1.2em;
+color:#75A149;
+font-weight:bold;
+margin:20px 0 0 0;
+padding-left:7px;
+border-bottom:#6bf 1px dotted;
+text-align:left
+}
+
+#wp-calendar tfoot {background:url(images/butterflydot.gif) center no-repeat;}
+
+#wp-calendar th {color:#6bf;}
+
+#wp-calendar td {text-align:center}
+
+#today {border:#6bf 1px dotted;
+background:#dafec1;
+font-weight:bold}
+
+
+/* image handling */
+
+#content img {max-width:500px;}
+
+#content, .sidebar {overflow:hidden}
+
+a img {border:0}
+
+.alignright {
+float:right;
+margin:5px}
+
+.alignleft {
+float:left;
+margin:5px}
+
+.center {
+margin:auto;
+display:block;
+}
+
+/* footerage */
+#footer {clear:both;
+background:url(images/contentfooter.png) no-repeat;
+height:75px;
+padding-left:30px;
+font-size:0.9em}

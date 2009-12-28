@@ -1,0 +1,17 @@
+{% extends "sandbox/base.html" %}
+
+{% block body-css %}wordpress {% now "\yY \mm \dd \hH" %} archive date{% endblock %}
+
+{% block title %}{{ blog.name }}{% endblock %}
+
+{% block content %}
+
+			<h2 class="page-title">Monthly Archives: <span>{{ archive_date|date:"F Y" }}</span></h2>
+
+{% include "sandbox/nav_above.html" %}
+
+{% include "sandbox/entries.html" %}
+
+{% include "sandbox/nav_below.html" %}
+	
+{% endblock %}

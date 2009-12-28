@@ -1,0 +1,42 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+	<head>
+		<link rel="stylesheet" type="text/css" href="{{ blog_path }}styles/{{ style }}/style.css" />
+		{% block head %}{% endblock %}
+		<title>{% block title %}{% endblock %}</title>
+	</head>
+<body class="{% block body-css %}{% endblock %}">
+
+<div id="wrapper" class="hfeed">
+
+	<div id="header">
+		<h1 id="blog-title"><span><a href="{{ blog_path }}index.html" title="" rel="home">{{ blog.name }}</a></span></h1>
+		<div id="blog-description">{{ blog.description }}</div>
+	</div><!--  #header -->
+
+	<div id="access">
+		<div class="skip-link"><a href="#content" title=""></a></div>
+		<div id="menu"><ul></ul></div>
+	</div><!-- #access -->
+	
+	<div id="container">
+		<div id="content">
+
+{% block content %}{% endblock %}
+	
+		</div><!-- #content -->
+	</div><!-- #container -->
+
+{% include "sandbox/sidebar.html" %}
+	
+	<div id="footer">
+		<span id="generator-link"><a href="" title="" rel="generator">Django MT</a></span>
+		<span class="meta-sep">|</span>
+		<span id="theme-link"><a href="" title="" rel="designer">Built by Ed</a></span>
+	</div><!-- #footer -->
+
+</div><!-- #wrapper .hfeed -->
+
+</body>
+</html>

@@ -1,0 +1,75 @@
+	<div id="primary" class="sidebar">
+		<ul class="xoxo">
+
+{% load mt_tags %}
+{% mt_pages as pages %}
+{% if pages %}
+			<li id="pages">
+				<h3>Pages</h3>
+				<ul>
+{% for page in pages %}
+	                <li class="page_item page-item-{{ page.id }}"><a href="{{ blog_path }}{{ page.basename }}.html" title="{{ page.title }}">{{ page.title }}</a></li>
+{% endfor %}
+				</ul>
+			</li>
+{% endif %}
+
+{% mt_top_level_categories as categories %}
+{% if categories %}
+			<li id="categories">
+				<h3>Categories</h3>
+				<ul>
+{% for category in categories %}
+                    <li class="cat-item cat-item-{{ category.id }}"><a href="{{ blog_path }}{{ category.basename }}/" title="View all posts filed under {{ category.label }}">{{ category.label }}</a></li>
+{% endfor %}
+				</ul>
+			</li>
+{% endif %}
+
+{% mt_archive_list as archives %}
+{% if archives %}
+			<li id="archives">
+				<h3>Archives</h3>
+				<ul>
+
+{% for archive in archives %}
+{% if not archive.isyear %}
+                    <li><a href="{{ blog_path }}{{ archive.yearmonth }}/">{{ archive.monthname }} {{ archive.year }} ({{ archive.count }})</a></li>
+{% endif %}
+{% endfor %}
+
+{% for archive in archives %}
+{% if archive.isyear %}
+                    <li><a href="{{ blog_path }}{{ archive.year }}/">{{ archive.year }} ({{ archive.count }})</a></li>
+{% endif %}
+{% endfor %}
+
+				</ul>
+			</li>
+{% endif %}
+
+		</ul>
+	</div><!-- #primary .sidebar -->
+
+	<div id="secondary" class="sidebar">
+		<ul class="xoxo">
+
+			<li id="search">
+				<h3><label for="s">Search</label></h3>
+				<form id="searchform" class="blog-search" method="get" action="">
+					<div>
+						<input id="s" name="s" type="text" class="text" value="" size="10" tabindex="1" />
+						<input id="searchsubmit" name="searchsubmit" type="submit" value="Find" tabindex="2" />
+					</div>
+				</form>
+			</li>
+
+			<li id="rss-links">
+				<h3>RSS Feeds</h3>
+				<ul>
+					<li><a href="/feeds/latest/{{ blog_name }}/" title="Subscribe" rel="alternate" type="application/rss+xml">Subscribe</a></li>
+				</ul>
+			</li>
+
+		</ul>
+	</div><!-- #secondary .sidebar -->

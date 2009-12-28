@@ -1,0 +1,40 @@
+8
+
+dir
+94839
+http://svn.sixapart.com/repos/eng/hacks/python/DjangoMT/src/mtsite/mt/templates/feeds
+http://svn.sixapart.com/repos/eng
+
+
+
+2008-12-03T02:17:59.874837Z
+94839
+eanuff
+
+
+svn:special svn:externals svn:needs-lock
+
+title.html
+file
+
+
+
+
+2008-10-20T07:12:09.000000Z
+a6ad7e43647d5651c08139a1a184e799
+2008-12-03T02:17:59.874837Z
+94839
+eanuff
+
+description.html
+file
+
+
+
+
+2008-10-20T07:12:35.000000Z
+5d56826bbfc36d5d5cce4c177867bbc4
+2008-12-03T02:17:59.874837Z
+94839
+eanuff
+

@@ -1,0 +1,343 @@
+/*
+THEME NAME: SandPress
+THEME URI: http://www.clazh.com/download/
+DESCRIPTION: <strong>This Theme was Designed by <a href="http://www.clazh.com">Arpit Jacob</a> for the <a href="http://www.sndbx.org">SandBox Theme Competition</a>. <br />You might want to subscribe to <a style="color:orange" href="http://www.clazh.com/feed">Blog's RSS Feed</a> to keep up with the latest Bug fixs and releases </strong> <br /><br /><strong>In The End</strong> The <strong>SandPress Theme</strong> Has A Lot Of Potenial Its <strong>Just Waiting To Be Discovered.</strong>
+VERSION: 0.71
+AUTHOR: <a href="http://www.clazh.com/">Arpit Jacob</a>
+AUTHOR URI:
+TEMPLATE: sandbox
+*/
+
+/*thank you and credits
+Wordpress.org and the awesome wordpress community thank you everyone :)
+Everaldo Crystal GPL Icons - the best open source Icons
+Firebug & firefox - I wouldnt have been able to finish the design at such short notice without this
+Notepad++ - another simple but amazing tool
+In The End SandPress Has A Lot Of Potenial Its Just Waiting To Be Discovered ;)
+*/
+
+/*CSS Reset Reloaded-  From Eric Meyer http://meyerweb.com/eric/thoughts/2007/05/01/reset-reloaded/*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {margin: 0; padding: 0; border: 0; outline: 0; font-weight: inherit;font-style: inherit; font-size: 100%;font-family: inherit; vertical-align: baseline;}
+/* remember to define focus styles! */
+:focus {	outline: 0;}
+body {line-height: 1; color: black; background: white; font-size:100.01%; }
+ol, ul {list-style: none;}
+/* tables still need 'cellspacing="0"' in the markup */
+table {border-collapse: separate; border-spacing: 0;}
+caption, th, td {text-align: left;font-weight: normal;}
+blockquote:before, blockquote:after, q:before, q:after { content: "";}
+blockquote, q {quotes: "" "";}
+
+/*Global Styling*/
+body{background:#FFF url(images/back.png) repeat-x; font-family:	'Lucida Grande',Verdana,Arial,Sans-Serif;}
+a:link {color: #DB0048; text-decoration:none}
+a:visited {color: #666; text-decoration:none}
+a:hover {color: #567690; text-decoration:none}
+h1, h2, h3, h4, h5, h6{font-weight:normal; font-family: candara,'Lucida Grande',Verdana,Arial,Sans-Serif;}
+h2{font-size:1.4em}
+h3{font-size:1.3em}
+h4{font-size:1.2em}
+h5{font-size:1.1em}
+h6{font-weight:bold}
+blockquote{font-style:italic; padding:15px; margin:10px 0; background:#EEE}
+pre{background:#EEE; font-size:0.7em; font-style:normal; padding:15px; margin:10px 0; font-family:courier; line-height:1.7em;}
+code{font-family:courier; padding:3px; background:#E4ECFC;  border-bottom:1px solid #D1DAED;  border-right:1px solid #D1DAED;}
+pre code{padding:0; background:none}
+
+/*Layout */
+div#wrapper{margin:0 auto;  width:980px;}
+div#container {width:980px; float:left;}
+div#content {margin: 0 410px 0 0}
+
+/*header*/
+div#header{height:190px; text-align:center}
+div#header h1#blog-title{padding-top:90px; font-size:1.2em}
+div#header h1#blog-title a{color:#FFF; }
+div#header div#blog-description{color:#FFF; margin-top:10px; font-size:0.7em}
+
+/*Menu*/
+div#access .skip-link{display:none}
+#access{margin-top:-172px; margin-bottom:90px; color:#E0E0E0; width:100%; 
+font-size:0.75em; line-height:2.6em; font-family: Verdana,sans-serif;}
+html>body  #access{margin-bottom:110px;}
+#menu{position:relative; height:30px; font-weight:bold; padding:0 0 0 10px;}
+#menu ul{margin:0;padding:0; list-style-type:none; width:auto; float:left;}
+#menu ul li.page_item {display:block; float:left; margin:0 1px; padding-right:15px}
+#menu ul li.page_item  a{display:block; color:#777; float:left; text-decoration:none; padding:10px 0 0 25px; height:40px;}
+#menu ul li.page_item  a:hover{color:#222}
+#menu ul li.current_page_item a, #menu ul li.current_page_item a:hover{color:#EEE;
+background: url(images/menu_left.png) no-repeat top left; }
+#menu ul li.current_page_item{background: url(images/menu_right.png) no-repeat top right; padding-right:25px}
+
+/*Only the lastest browsers see the second level menu -- */
+#menu ul li.page_item ul  li.page_item {display:none}
+html>body #menu ul li.current_page_parent a, html>body #menu ul li.current_page_parent a:hover{color:#fff;
+background: url(images/menu_left.png) no-repeat top left;}
+html>body #menu ul li.current_page_parent{background: url(images/menu_right.png) no-repeat top right; padding-right:25px}
+html>body #menu ul li.current_page_parent ul li.current_page_item a, 
+html>body #menu ul li.current_page_parent ul li.current_page_item a:hover{background:none;  margin-bottom:-10px; text-indent:-10px; color:#99CCFF}
+html>body #menu ul li.current_page_parent ul li.current_page_item{background:none; border-bottom:1px solid #62859F;}
+html>body #menu ul li.current_page_parent ul li.page_item {background:none; display:inline; font-size:0.9em; padding-right:10px}
+html>body #menu ul li.current_page_parent ul li.page_item a{background:none; display:inline;  text-indent:-10px; background:none; margin-top:25px}
+html>body #menu ul li.current_page_item ul  li.page_item {background:none; display:inline;  font-size:0.9em; padding-right:10px}
+html>body #menu ul li.current_page_item ul  li.page_item a{background:none; display:inline;  text-indent:-10px; background:none; margin-top:25px}
+
+
+/*Next Previous Styling*/
+div#nav-above{display:none}
+div#nav-below .nav-next, div#nav-below .nav-previous{font-size:0.6em; padding:10px; text-align:right; margin-top:10px; font-weight:bold}
+div#nav-below .nav-next a{background: url(images/nextback.png) no-repeat top left; padding:9px; padding-right:10px; padding-left:20px}
+div#nav-below .nav-next a .meta-nav{background: #FFF url(images/nextar.png) no-repeat top left; padding:9px; padding-right:50px; margin-left:-5px; margin-right:-10px}
+div#nav-below .nav-next .meta-nav{background: #FFF url(images/nextar.png) no-repeat top left; padding:9px; padding-right:50px; margin-left:-5px}
+div#nav-below .nav-previous{text-align:left}
+div#nav-below .nav-previous{float:left}
+div#nav-below .nav-next{float:right}
+div#nav-below .nav-previous a{background: url(images/prevback.png) no-repeat top right; padding:9px; padding-right:20px; padding-left:10px; margin-left:-5px;}
+div#nav-below .nav-previous a .meta-nav{background: #FFF url(images/prevar.png) no-repeat top left; padding:9px; padding-right:40px; margin-left:-10px}
+div#nav-below .nav-previous .meta-nav{background: #FFF url(images/prevar.png) no-repeat top left; padding:9px; padding-right:40px;  margin-left:-5px}
+
+/*Vaild CSS hack to Target only IE 7 and below*/
+.home div#nav-below .nav-next a:link:visited, .archive div#nav-below .nav-next a:link:visited{padding:0; padding-left:20px;}
+.home div#nav-below .nav-previous a:link:visited, .archive div#nav-below .nav-previous a:link:visited{padding:0; margin-left:5px; padding-right:25px;}
+
+/*DateStamp*/
+div#content div.post, div#content div.page{margin-top:20px; width:100%; overflow:hidden;
+background: url(images/dateieday.png) no-repeat 15px 27px;}
+div#content div.d01{background: url(images/ieday/di1.png) no-repeat 15px 27px;}
+div#content div.d02{background: url(images/ieday/di2.png) no-repeat 15px 27px;}
+div#content div.d03{background: url(images/ieday/di3.png) no-repeat 15px 27px;}
+div#content div.d04{background: url(images/ieday/di4.png) no-repeat 15px 27px;}
+div#content div.d05{background: url(images/ieday/di5.png) no-repeat 15px 27px;}
+div#content div.d06{background: url(images/ieday/di6.png) no-repeat 15px 27px;}
+div#content div.d07{background: url(images/ieday/di7.png) no-repeat 15px 27px;}
+div#content div.d08{background: url(images/ieday/di8.png) no-repeat 15px 27px;}
+div#content div.d09{background: url(images/ieday/di9.png) no-repeat 15px 27px;}
+div#content div.d10{background: url(images/ieday/di10.png) no-repeat 15px 27px;}
+div#content div.d11{background: url(images/ieday/di11.png) no-repeat 15px 27px;}
+div#content div.d12{background: url(images/ieday/di12.png) no-repeat 15px 27px;}
+div#content div.d13{background: url(images/ieday/di13.png) no-repeat 15px 27px;}
+div#content div.d14{background: url(images/ieday/di14.png) no-repeat 15px 27px;}
+div#content div.d15{background: url(images/ieday/di15.png) no-repeat 15px 27px;}
+div#content div.d16{background: url(images/ieday/di16.png) no-repeat 15px 27px;}
+div#content div.d17{background: url(images/ieday/di17.png) no-repeat 15px 27px;}
+div#content div.d18{background: url(images/ieday/di18.png) no-repeat 15px 27px;}
+div#content div.d19{background: url(images/ieday/di19.png) no-repeat 15px 27px;}
+div#content div.d20{background: url(images/ieday/di20.png) no-repeat 15px 27px;}
+div#content div.d21{background: url(images/ieday/di21.png) no-repeat 15px 27px;}
+div#content div.d22{background: url(images/ieday/di22.png) no-repeat 15px 27px;}
+div#content div.d23{background: url(images/ieday/di23.png) no-repeat 15px 27px;}
+div#content div.d24{background: url(images/ieday/di24.png) no-repeat 15px 27px;}
+div#content div.d25{background: url(images/ieday/di25.png) no-repeat 15px 27px;}
+div#content div.d26{background: url(images/ieday/di26.png) no-repeat 15px 27px;}
+div#content div.d27{background: url(images/ieday/di27.png) no-repeat 15px 27px;}
+div#content div.d28{background: url(images/ieday/di28.png) no-repeat 15px 27px;}
+div#content div.d29{background: url(images/ieday/di29.png) no-repeat 15px 27px;}
+div#content div.d30{background: url(images/ieday/di30.png) no-repeat 15px 27px;}
+div#content div.d31{background: url(images/ieday/di31.png) no-repeat 15px 27px;}
+
+html>body div#content div.d01{background: url(images/day/d1.png) no-repeat 15px 27px;}
+html>body div#content div.d02{background: url(images/day/d2.png) no-repeat 15px 27px;}
+html>body div#content div.d03{background: url(images/day/d3.png) no-repeat 15px 27px;}
+html>body div#content div.d04{background: url(images/day/d4.png) no-repeat 15px 27px;}
+html>body div#content div.d05{background: url(images/day/d5.png) no-repeat 15px 27px;}
+html>body div#content div.d06{background: url(images/day/d6.png) no-repeat 15px 27px;}
+html>body div#content div.d07{background: url(images/day/d7.png) no-repeat 15px 27px;}
+html>body div#content div.d08{background: url(images/day/d8.png) no-repeat 15px 27px;}
+html>body div#content div.d09{background: url(images/day/d9.png) no-repeat 15px 27px;}
+html>body div#content div.d10{background: url(images/day/d10.png) no-repeat 15px 27px;}
+html>body div#content div.d11{background: url(images/day/d11.png) no-repeat 15px 27px;}
+html>body div#content div.d12{background: url(images/day/d12.png) no-repeat 15px 27px;}
+html>body div#content div.d13{background: url(images/day/d13.png) no-repeat 15px 27px;}
+html>body div#content div.d14{background: url(images/day/d14.png) no-repeat 15px 27px;}
+html>body div#content div.d15{background: url(images/day/d15.png) no-repeat 15px 27px;}
+html>body div#content div.d16{background: url(images/day/d16.png) no-repeat 15px 27px;}
+html>body div#content div.d17{background: url(images/day/d17.png) no-repeat 15px 27px;}
+html>body div#content div.d18{background: url(images/day/d18.png) no-repeat 15px 27px;}
+html>body div#content div.d19{background: url(images/day/d19.png) no-repeat 15px 27px;}
+html>body div#content div.d20{background: url(images/day/d20.png) no-repeat 15px 27px;}
+html>body div#content div.d21{background: url(images/day/d21.png) no-repeat 15px 27px;}
+html>body div#content div.d22{background: url(images/day/d22.png) no-repeat 15px 27px;}
+html>body div#content div.d23{background: url(images/day/d23.png) no-repeat 15px 27px;}
+html>body div#content div.d24{background: url(images/day/d24.png) no-repeat 15px 27px;}
+html>body div#content div.d25{background: url(images/day/d25.png) no-repeat 15px 27px;}
+html>body div#content div.d26{background: url(images/day/d26.png) no-repeat 15px 27px;}
+html>body div#content div.d27{background: url(images/day/d27.png) no-repeat 15px 27px;}
+html>body div#content div.d28{background: url(images/day/d28.png) no-repeat 15px 27px;}
+html>body div#content div.d29{background: url(images/day/d29.png) no-repeat 15px 27px;}
+html>body div#content div.d30{background: url(images/day/d30.png) no-repeat 15px 27px;}
+html>body div#content div.d31{background: url(images/day/d31.png) no-repeat 15px 27px;}
+
+div#content div.post .entry-title, div#content div.page .entry-title{font-size:1.3em; font-weight:normal; color:#023d6a; 
+padding-bottom:8px; margin:10px 0; padding-left:60px; background:url(images/dateiemonth.png) no-repeat 15px 0}
+
+div#content div.m01 .entry-title{background:url(images/iemonth/mi1.png) no-repeat 15px 0}
+div#content div.m02 .entry-title{background:url(images/iemonth/mi2.png) no-repeat 15px 0}
+div#content div.m03 .entry-title{background:url(images/iemonth/mi3.png) no-repeat 15px 0}
+div#content div.m04 .entry-title{background:url(images/iemonth/mi4.png) no-repeat 15px 0}
+div#content div.m05 .entry-title{background:url(images/iemonth/mi5.png) no-repeat 15px 0}
+div#content div.m06 .entry-title{background:url(images/iemonth/mi6.png) no-repeat 15px 0}
+div#content div.m07 .entry-title{background:url(images/iemonth/mi7.png) no-repeat 15px 0}
+div#content div.m08 .entry-title{background:url(images/iemonth/mi8.png) no-repeat 15px 0}
+div#content div.m09 .entry-title{background:url(images/iemonth/mi9.png) no-repeat 15px 0}
+div#content div.m10 .entry-title{background:url(images/iemonth/mi10.png) no-repeat 15px 0}
+div#content div.m11 .entry-title{background:url(images/iemonth/mi11.png) no-repeat 15px 0}
+div#content div.m12 .entry-title{background:url(images/iemonth/mi12.png) no-repeat 15px 0}
+
+html>body div#content div.post .entry-title, html>body div#content div.page .entry-title{background:url(images/datemonth.png) no-repeat 15px 0;}
+html>body div#content div.m01 .entry-title{background:url(images/month/mjan.png) no-repeat 15px 0;}
+html>body div#content div.m02 .entry-title{background:url(images/month/mfeb.png) no-repeat 15px 0;}
+html>body div#content div.m03 .entry-title{background:url(images/month/mmar.png) no-repeat 15px 0;}
+html>body div#content div.m04 .entry-title{background:url(images/month/mapr.png) no-repeat 15px 0;}
+html>body div#content div.m05 .entry-title{background:url(images/month/mmay.png) no-repeat 15px 0;}
+html>body div#content div.m06 .entry-title{background:url(images/month/mjun.png) no-repeat 15px 0;}
+html>body div#content div.m07 .entry-title{background:url(images/month/mjul.png) no-repeat 15px 0;}
+html>body div#content div.m08 .entry-title{background:url(images/month/maug.png) no-repeat 15px 0;}
+html>body div#content div.m09 .entry-title{background:url(images/month/msep.png) no-repeat 15px 0;}
+html>body div#content div.m10 .entry-title{background:url(images/month/moct.png) no-repeat 15px 0;}
+html>body div#content div.m11 .entry-title{background:url(images/month/mnov.png) no-repeat 15px 0;}
+html>body div#content div.m12 .entry-title{background:url(images/month/mdec.png) no-repeat 15px 0;}
+
+.page h2, .single h2 {padding-top:5px;}
+.archive h3{border:0}
+.archive .page-title{border-bottom:1px solid #DDD; padding:10px 0; padding-left:40px; margin:15px 10px; width:505px}
+.archive .page-title{background: url(images/icons/archive.png) no-repeat 0 7px; }
+
+div#content div.post .entry-title a, div#content div.page .entry-title a{display:block; 
+width:495px; color:#444; text-decoration:none; line-height:1.3em; padding-bottom:3px;  border-bottom:1px solid #CCC;}
+.entry-date{display:none; text-align:right; font-size:0.7em; font-weight:bold; color:#DB0048; padding-bottom:10px;}
+
+/*Content Post Styling*/
+.entry-content{overflow:hidden; margin-top:10px; padding:10px; padding-right:25px;}
+.entry-content p{font-size:0.75em; color:#444; line-height:1.8em; padding:5px; text-align:justify}
+.entry-content em{font-style:italic}
+.entry-content h2, h3, h4, h5, h6{border-bottom:1px solid #EEE; padding:5px 0; margin:5px 0; width:100%}
+.entry-content ul, ol{margin:10px 35px; width:87%; font-size:12px; line-height:1.8em;}
+.entry-content ul li{padding-left:25px; background: url(images/bullet.png) no-repeat 0 2px} 
+.entry-content ol {list-style-position:inside; padding-left:10px;} 
+.entry-content ol li{list-style-type: decimal; background:none}
+.entry-content dl{font-size:0.75em; line-height:1.8em;}
+.entry-content dl dt{background: url(images/bullet.png) no-repeat 0 2px; border-bottom:1px solid #ccc; padding-left:20px; margin:10px 5px;}
+.entry-content img{max-width:500px; padding:6px ; background:#eee; border:1px solid #DDD}
+.entry-content dl dd{margin:10px 25px; font-size:0.9em}
+.entry-content strong, .entry-content b{font-weight:bold}
+.entry-content .caps{text-transform: uppercase;}
+.entry-content .important{background:#FFFFEC; padding:3px; border-bottom:1px solid #E0E0E0; border-right:1px solid #E0E0E0;}
+.entry-content a{background:#FFFFEC; color:#444; padding:2px; border-bottom:1px solid #E0E0E0; border-right:1px solid #E0E0E0;}
+.entry-content  a:hover{background:#E4ECFC; color:#444; padding:2px; border-bottom:1px solid #E0E0E0;  border-right:1px solid #E0E0E0; }
+.entry-content div.page-link{font-size:0.7em; font-weight:bold; line-height:2.2em;}
+.entry-content div.page-link a{width:30px; height:30px; background:transparent url(images/pagelink.png) no-repeat; margin:0; padding:11px; padding-top:8px; border:0; text-align:center; color:#FFF}
+.entry-content div.page-link a:hover{width:30px; height:30px; background:transparent url(images/pagelink.png) no-repeat; margin:0; padding:11px; padding-top:8px; border:0; text-align:center; color:#FFA8C5}
+.entry-content a.more-link{float:right; background:transparent url(images/readmore.png) no-repeat; text-align:center; border:0; display:block; width:155px; height:30px; margin:5px 0; text-indent:-999px}
+.entry-content a.more-link:hover{background:transparent url(images/readmore.png) no-repeat; display:block;  margin:5px 0; border:0}
+.entry-content a.more-link .meta-nav{display:none;}
+/*Meta Data Styling*/
+.entry-meta{font-size:0.7em; clear:both; color:#444; margin-right:15px; }
+.entry-meta .meta-sep{display:none;}
+.entry-meta .author{display:block; width:30%; padding:0 10px; font-weight:bold; font-size:1.1em; text-indent:25px; height:40px; margin-left:10px; margin-bottom:10px; background:transparent url(images/icons/author.png) no-repeat;}
+.entry-meta .author a{line-height:2.6em}
+.entry-meta .cat-links{display:block; padding:10px; background:#F5FCFF;  border-top:1px solid #D1EFFF; border-bottom:1px solid #D1EFFF; }
+.entry-meta .edit-link{display:inline; float:right; background:#F5FCFF; border-bottom:1px solid #D1EFFF; }
+.entry-meta .comments-link{display:inline; padding:0 10px; float:right; height:40px;  text-indent:25px; font-weight:bold; font-size:1.1em; text-align:right; margin-top:-80px; background:transparent url(images/icons/comments.png) no-repeat; }
+body.author .entry-meta .comments-link{margin-top:-70px; }
+.entry-meta .comments-link a{line-height:2.6em}
+.entry-meta .comments-link span{line-height:2.6em}
+.single .entry-meta{margin-top:10px; padding:15px; background:#F5FCFF; border:1px solid #D1EFFF; border-left:0; border-right:0;line-height:1.8em}
+.single .entry-meta .author{margin-top:10px}
+
+/*Asides*/
+div#content div.category-asides{background:none}
+html>body div#content div.category-asides{background:none}
+div#content div.category-asides .entry-title{background:none; font-size:0.9em; font-weight:bold; padding-bottom:0; padding-left:0; margin:0 10px}
+html>body div#content  div.category-asides .entry-title{background:none}
+
+div#content div.category-asides .entry-title a{width:94%; margin-top:20px; padding:5px 0; padding-left:10px; color:#555}
+div#content div.category-asides .entry-content{font-size:0.9em; line-height:1.6em; margin:0}
+div#content div.category-asides .entry-meta{background:#F5FCFF; font-size:0.6em; padding:5px; border:1px solid #D1EFFF; border-left:0;border-right:0}
+div#content div.category-asides .entry-meta .meta-sep{display:none;}
+div#content div.category-asides .entry-meta .author{display:inline; border:0; padding:0; background:none}
+div#content div.category-asides .entry-meta .cat-links{display:inline;  border:0; padding:0; background:none}
+div#content div.category-asides .entry-meta .edit-link{display:inline; float:none;  border:0; padding:0; background:none}
+div#content div.category-asides .entry-meta .comments-link{display:inline; border:0; padding:0; background:none; margin:0; float:none; font-size:1em; }
+div#content div.category-asides .entry-meta .comments-link a{line-height:0.7em}
+
+/*Comments*/
+div#comments{clear:both;}
+div#comments-list h3{background:url(images/icons/usrcomments.png) no-repeat 0 5px;  width:500px; padding:10px; padding-left:40px }
+div#comments-list ol {display:block; margin:0; width:570px; padding:0; font-size:.75em;}
+div#comments-list ol li{display:block; margin:25px 0; padding:0; background:none}
+div#comments-list ol li .comment-author{font-weight:bold;}
+div#comments-list ol li .comment-meta{padding-bottom:10px; color:#AAA; font-weight:normal;font-size:0.8em; border-top:1px solid #B8DFFF}
+div#comments-list ol li .comment-author{padding-right:10px}
+div#comments-list ol li p{font-weight:normal;}
+/*For Post Author special Style*/
+div#comments-list ol li.bypostauthor .comment-meta{border:0; padding:0 10px; background:#F7F7F7 url(images/bling.png) no-repeat top left;}
+div#comments-list ol li.bypostauthor p{background:#F7F7F7; padding:15px; padding-top:0 }
+
+/*Trackbacks and Pingbacks*/
+div#trackbacks-list h3 {background:url(images/icons/trackbacks.png) no-repeat 0 5px; margin-bottom:0; width:500px; padding:10px; padding-left:40px; border:0;}
+div#trackbacks-list ol {display:block; width:530px; border:1px solid #CCC; border-left:0; border-right:0; background:#F7F7F7; margin:0; padding:20px; font-size:.6em;}
+div#trackbacks-list ol li{display:block; margin:15px 0; padding:0; background:none}
+div#trackbacks-list ol li div.comment-author{border-bottom:1px solid #B8DFFF}
+
+/*Comment Form*/
+div#respond h3 {background:url(images/icons/commentform.png) no-repeat 0 5px; margin-top:10px; width:500px; padding:10px; padding-left:40px; border:0;}
+div#respond .formcontainer{font-size:0.55em;  width:500px; line-height:1.7em; height:400px; background:url(images/commentform.png) no-repeat 0 5px; }
+div#respond form#commentform textarea{border:3px solid #58B0DA; padding:5px; height:80px; width:424px}
+div#respond form#commentform input{border:3px solid #58B0DA; padding:5px; height:16px; width:424px}
+div#respond form#commentform input#submit{border:0; margin-top:10px; width:440px; height:24px;}
+form#commentform{margin:0 auto; width:440px; padding-top:30px}
+form#commentform p#comment-notes{color:#FFF}
+form#commentform div.form-label{color:#FFF; margin:5px 0}
+
+/*Sidebars*/
+div.sidebar {float: left;	overflow: hidden; font-size:0.75em; line-height:1.7em;}
+div.sidebar h3{font-size:1.5em; border-bottom:1px solid #EEE; color:#666; margin-top:10px; }
+div#primary {width: 205px; margin: 20px 0 0 -411px;  background:url(images/sideleft.png) no-repeat }
+div#secondary {width: 205px; margin: 20px 0 0 -206px; border-left:1px solid #E2E2E2; background:url(images/sideright.png) no-repeat }
+div.sidebar ul.xoxo{font-size:0.95em}
+div.sidebar ul.xoxo a:visited{color:#234159}
+div.sidebar ul.xoxo li h3{padding:5px 10px; font-weight:bold}
+div.sidebar ul.xoxo li ul li{display:inline;}
+div.sidebar ul.xoxo li ul li a{display:block; font-weight:bold; overflow:hidden; height:22px; font-size:0.9em; padding:4px 20px}
+div.sidebar ul.xoxo li ul li a:hover{background:url(images/sidelinks.png) no-repeat; color:#EEE}
+div.sidebar ul.xoxo li ul li ul{border:0}
+
+/*Search Form*/
+li#search h3{display:none}
+form#searchform div{width:240px; height:70px; margin-left:12px; margin-top:20px; background:url(images/search2.png) no-repeat}
+form#searchform input#s{margin-top:20px; margin-left:8px; width:110px; line-height:1.3em; font-weight:bold; border:0}
+html>body form#searchform input#s{margin-left:15px;}
+form#searchform input#searchsubmit{background:none; border:0px; width:40px; outline:none; height:30px; font-size:0px; margin-left:px}
+
+/*RSS Widget*/
+li#rss-links{background:url(images/rss2.png) no-repeat; margin-left:12px; margin-top:20px; width:200px; height:100px}
+li#rss-links h3{display:none;}
+li#rss-links ul{margin-left:20px;  padding-top:60px; border:0 }
+li#rss-links ul li{display:inline;}
+li#rss-links ul > li:first-child a{color:orange}
+li#rss-links a{display:inline; border:0; padding:0; color:#FFF; font-size:0.9em; font-weight:bold;}
+li#rss-links a:hover{background:none}
+
+/*Recent Comments Widget*/
+ul#recentcomments li{padding:5px 10px; display:block; overflow:hidden; width:200px}
+ul#recentcomments a:hover{background:none; color:#444}
+
+/*Clander Widget*/
+div#calendar_wrap{padding:0 10px}
+div#calendar_wrap table{padding:5px; border:0}
+div#calendar_wrap caption{font-weight:bold; font-size:1.2em; background:#DDD; padding:5px}
+div#calendar_wrap th{font-weight:bold; padding:5px}
+div#calendar_wrap td{padding:5px; border:0}
+div#calendar_wrap tfoot{background:#DDD}
+div#calendar_wrap tfoot td{ font-weight:bold; font-size:1.2em;}
+div.textwidget{padding:0 10px;}
+
+/*footer*/
+div#footer {clear:left; position:relative; margin-left:-10px; margin-right:-10px; background:url(images/footer.png) no-repeat; height:175px; padding:10px; padding-top:105px; font-size:0.6em; text-align:center}
+
+
+/* A little something for everybody :D
+
+	#3A573R .33G{background:#000070 url(53ARC4/C1A54.PNG} -777px 2114px}
+
+*/

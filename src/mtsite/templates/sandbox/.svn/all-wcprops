@@ -1,0 +1,77 @@
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/repos/eng/!svn/ver/94839/hacks/python/DjangoMT/src/mtsite/templates/sandbox
+END
+nav_below.html
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/repos/eng/!svn/ver/94839/hacks/python/DjangoMT/src/mtsite/templates/sandbox/nav_below.html
+END
+page_detail.html
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/repos/eng/!svn/ver/94839/hacks/python/DjangoMT/src/mtsite/templates/sandbox/page_detail.html
+END
+nav_above.html
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/repos/eng/!svn/ver/94839/hacks/python/DjangoMT/src/mtsite/templates/sandbox/nav_above.html
+END
+archive_year.html
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/repos/eng/!svn/ver/94839/hacks/python/DjangoMT/src/mtsite/templates/sandbox/archive_year.html
+END
+entry_detail.html
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/repos/eng/!svn/ver/94839/hacks/python/DjangoMT/src/mtsite/templates/sandbox/entry_detail.html
+END
+comments.html
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/repos/eng/!svn/ver/94839/hacks/python/DjangoMT/src/mtsite/templates/sandbox/comments.html
+END
+archive_month.html
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/repos/eng/!svn/ver/94839/hacks/python/DjangoMT/src/mtsite/templates/sandbox/archive_month.html
+END
+archive_index.html
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/repos/eng/!svn/ver/94839/hacks/python/DjangoMT/src/mtsite/templates/sandbox/archive_index.html
+END
+login.html
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/repos/eng/!svn/ver/94839/hacks/python/DjangoMT/src/mtsite/templates/sandbox/login.html
+END
+entries.html
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/repos/eng/!svn/ver/94839/hacks/python/DjangoMT/src/mtsite/templates/sandbox/entries.html
+END
+sidebar.html
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/repos/eng/!svn/ver/94839/hacks/python/DjangoMT/src/mtsite/templates/sandbox/sidebar.html
+END
+base.html
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/repos/eng/!svn/ver/94839/hacks/python/DjangoMT/src/mtsite/templates/sandbox/base.html
+END

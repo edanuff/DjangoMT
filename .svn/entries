@@ -1,0 +1,68 @@
+8
+
+dir
+94839
+http://svn.sixapart.com/repos/eng/hacks/python/DjangoMT
+http://svn.sixapart.com/repos/eng
+
+
+
+2008-12-03T02:17:59.874837Z
+94839
+eanuff
+
+
+svn:special svn:externals svn:needs-lock
+
+.project
+file
+
+
+
+
+2008-10-04T23:42:02.000000Z
+caa4df75544f1bdd570f4c8cb149c3bc
+2008-12-03T02:17:59.874837Z
+94839
+eanuff
+
+src
+dir
+
+readme.txt
+file
+
+
+
+
+2008-10-20T03:04:07.000000Z
+b1fea7f4b264f279fad97ca4a82ce008
+2008-12-03T02:17:59.874837Z
+94839
+eanuff
+
+startup.sh
+file
+
+
+
+
+2008-11-04T01:10:13.000000Z
+2dbf9dbd0958fcaf59393f2be96f3ebc
+2008-12-03T02:17:59.874837Z
+94839
+eanuff
+has-props
+
+.pydevproject
+file
+
+
+
+
+2008-10-04T23:42:02.000000Z
+4ef8ea215cce411db83d657dee251c4c
+2008-12-03T02:17:59.874837Z
+94839
+eanuff
+

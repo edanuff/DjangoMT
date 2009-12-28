@@ -1,0 +1,21 @@
+{% extends "sandbox/base.html" %}
+
+{% block body-css %}wordpress {% now "\yY \mm \dd \hH" %} page  page-{{ entry.id }} {{ entry.authored_on|date:"\p\-\yY \p\-\mm \p\-\dd \p\-\hH" }}{% endblock %}
+
+{% block title %}{{ blog.name }}{% endblock %}
+
+{% block content %}
+
+			<div id="post-{{ entry.id }}" class="hentry p1 page publish {{ entry.authored_on|date:"\yY \mm \dd \hH" }}">
+				<h2 class="entry-title">{{ entry.title }}</h2>
+				<div class="entry-content"><p>
+{{ entry.text|safe }}</p>
+<p><span id="more-{{ entry.id }}"></span></p><p>
+{{ entry.text_more|safe }}</p>
+				</div>
+
+			</div><!-- .post -->
+
+{% include "sandbox/comments.html" %}
+
+{% endblock %}

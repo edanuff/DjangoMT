@@ -1,0 +1,24 @@
+{% for entry in entry_list %}
+<!-- {{ entry.class_field }} -->
+			<div id="post-{{ entry.id }}" class="post hentry publish {{ entry.authored_on|date:"\yY \mm \dd \hH" }}">
+				<h2 class="entry-title"><a href="{{ blog_path }}{{ entry.authored_on|date:"Y\/m" }}/{{ entry.basename }}.html" title="{{ entry.title }}" rel="bookmark">{{ entry.title }}</a></h2>
+				<div class="entry-date"><abbr class="published" title="{{ entry.authored_on|date:"Y-m-d\TH:i:sO" }}">{{ entry.authored_on|date:"F j\, Y \- g:i a" }}</abbr></div>
+				<div class="entry-content"><p>
+				{{ entry.text|safe }}</p>
+{% if entry.text_more %}
+<p> <a href="{{ blog_path }}{{ entry.authored_on|date:"Y\/m" }}/{{ entry.basename }}.html#more-{{ entry.id }}" class="more-link">Read More <span class="meta-nav">&raquo;</span></a></p>				
+{% endif %}
+				</div>
+				<div class="entry-meta">
+					<span class="author vcard">By {{ entry.author.name }}</span>
+					<span class="meta-sep">|</span>
+					<span class="cat-links">Posted in </span>
+					<span class="meta-sep">|</span>
+					<span class="tag-links"></span>
+					<span class="comments-link">Comments {{ entry.comment_count }}</span>
+				</div>
+			</div><!-- .post -->
+
+{# comments_template #}
+
+{% endfor %}

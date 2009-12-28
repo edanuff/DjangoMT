@@ -1,0 +1,122 @@
+/*
+	Basic sandbox typography for a dependant on reset.css
+	that maintains a 28px baseline grid
+*/
+body {
+	font:14px/28px Georgia, serif;
+}
+p {
+	font:14px/28px Georgia, serif;
+	margin-bottom:28px;
+}
+ol, ul, abbr, dt, dd, label, input {
+		font:14px/28px Georgia, serif;
+}
+cite, em, i {
+	font-style:italic;
+}
+b, strong {
+	font-weight:bold;
+}
+code, pre {
+	font-family:monospace;
+}
+del {
+	color:#666666;
+}
+ins {
+	text-decoration:none;
+}
+ins:before {
+	content: "Update: ";
+	font-weight:bold;
+	text-transform:uppercase;
+	font-size:10px;
+}
+blockquote {
+	margin-left:44px;
+	margin-right:44px;
+}
+dt {
+	font-weight:bold;
+	margin-left:44px;
+}	
+dd {	margin-bottom:28px;
+	margin-left:88px;
+	margin-right:44px;
+}
+.caps {
+	font-size:12px;
+	letter-spacing:.125em;
+	text-transform:uppercase;
+}
+.important {
+	background:#FFFFCC;
+	border-bottom:1px dotted #FFCC33;
+	color:black;
+}	
+h1,h2,h3,h4,h5,h6 {
+	font-family:Tahoma, Helvetica, Arial, sans-serif;
+	font-weight:bold;
+}
+/*
+	Specifics
+*/
+#blog-title {
+	font-size:36px;
+}
+#blog-description {
+	font-size:12px;
+	font-style:italic;
+}
+.entry-title {
+	font-size:28px;
+	text-transform:capitalize;
+}
+.navigation, .entry-date abbr, .entry-meta, .entry-meta abbr {
+	font:12px/28px Georgia, serif;
+	font-style:italic;
+}
+.entry-content abbr, .entry-content acronym {
+	text-decoration:underline;
+	cursor: help;
+}
+.entry-content h1,.entry-content h2,.entry-content h3 {
+	font-size:18px;
+}
+.entry-content h4 {
+	font-size:14px;
+}
+.entry-content h5 {
+	font-size:12px;
+}
+.entry-content h6 {
+	font-size:10px;
+}
+.entry-content ul {
+	list-style:square;
+}
+.entry-content ol {
+	list-style:decimal;
+}
+.entry-content ol ol {
+	list-style:upper-alpha;
+}
+.entry-content ol ol ol {
+	list-style:lower-roman;
+}
+.entry-content ol ol ol ol {
+	list-style:lower-alpha;
+}
+.entry-content ul,.entry-content ol {
+	font:14px/28px Georgia, serif;
+	margin-bottom:28px;
+	margin-left:44px;
+}
+.entry-content ul ul,.entry-content ol ol,.entry-content ul ol,.entry-content ol ul {
+	margin-bottom:0;
+}
+#footer {
+	font:12px/28px Georgia,serif;
+	font-style:italic;
+}

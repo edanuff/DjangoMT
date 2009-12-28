@@ -1,0 +1,206 @@
+/*
+	This CSS file controls (or replaces) any extra colors or images
+	Disable it and you still have a pretty decent theme left
+*/
+body {
+	color:#1F1E17;
+	border-top:4px solid #444444;
+}
+
+/*	Begin Links	*/
+a:link {
+	color:#901808;
+}
+a:visited, del a:link {
+	color:#B56554;
+}
+/* End Links */
+
+/* Begin Header */
+#header {
+	height:112px;
+	overflow:hidden;
+	background:#7F7D6E url('../images/header-back.png') no-repeat center;
+	padding:0;
+}
+#blog-title {
+	font-size:60px;
+	line-height:60px;
+	font-family:Georgia,serif;
+	font-weight:normal;
+	letter-spacing:-0.05em;
+	padding:0;
+	margin-top:35px;
+}
+#blog-title a:link,#blog-title a:visited {
+	color:white;
+}
+#blog-title a:hover {
+	color:white;
+}
+#blog-description {
+	font-size:12px;
+	line-height:12px;
+	font-style:normal;
+	height:21px;
+	text-align:center;
+	padding:0;
+	overflow:hidden;
+	text-transform:uppercase;
+	letter-spacing:.125em;
+	color:#FFFBDC;
+	margin-top:-3px;
+	margin-left:312px;
+}
+/* End Header */
+
+/* Begin Menu */
+#access {
+	border-top:1px solid #BFBCA5;
+}
+#menu ul a {
+	color:#1F1E17;
+}
+#menu ul li + li {
+	border-left:1px solid #BFBCA5;
+}
+#menu a:hover {
+	background:transparent;
+	color:#901808;
+}#menu ul ul {
+	background:white;
+	border-bottom:1px solid #BFBCA5;
+}
+#menu ul li:hover ul li a {
+	background:transparent;
+}
+/* End Menu */
+
+/* Begin Content */
+.entry-title a:link,.entry-title a:visited {
+	color:#1F1E17;
+}
+.entry-title a:hover {
+	color:#35342E;
+}
+.entry-date abbr {
+	border-bottom:1px dotted #BFBCA5;
+}
+.single .entry-content p:first-child:first-line, .home .p1 .entry-content p:first-child:first-line {
+	color:#222222;
+}
+.single .category-asides .entry-content p:first-child:first-line,
+.single .entry-content blockquote p:first-child:first-line,
+.single .entry-content form p:first-child:first-line, .paged .p1 .entry-content p:first-child:first-line {
+	color:#1F1E17;
+}
+.entry-content img {
+	background:white;
+	border-top:1px solid #BFBCA5;
+	border-bottom:1px solid #BFBCA5;
+}
+/* Comments */
+#comments h3 {
+	border-bottom:1px solid #BFBCA5;
+}
+#comments .alt {
+	background:#F8F8F6;
+}
+#comments .byuser {
+	background:#EFEEE8;
+	color:black;
+}
+#comments .byuser .n:after {
+	content:"REGISTERED MEMBER";
+	font-size:10px;
+	padding-left:.5em;
+}
+#comments .bypostauthor {
+	background:#DFDDD2;
+	color:black;
+}
+#comments .bypostauthor .n:after {
+	content:"THE POST AUTHOR";
+	font-size:10px;
+	padding-left:.5em;
+}
+#comments ol li {
+	border-bottom:1px solid #BFBCA5;
+}
+#comments-list .comment-author a:link, #comments-list .comment-author a:visited, #trackbacks-list .comment-author a:link, #trackbacks-list .comment-author a:visited {
+	color:#1F1E17;
+}
+#trackbacks-list .edit-link a:link {
+	color:#901808;
+}
+#trackbacks-list .edit-link a:visited {
+	color:#B56554;
+}
+#trackbacks-list .edit-link a:hover {
+	color:#1F1E17;
+}
+/* Comment Form */
+#respond h3 {
+	border-bottom:none;
+}
+#login .loggedin, .unapproved {
+	background:#FFFBDC;
+	border-bottom:1px dotted #BFBCA5;
+	border-right:1px dotted #BFBCA5;
+	color:black;
+}
+#respond .required {
+	color:#B56554;
+}
+del {
+	color:#8F8E8B;
+}
+.important {
+	background:#FFFBDC;
+	border-bottom:1px dotted #BFBCA5;
+	border-right:1px dotted #BFBCA5;
+	color:black;
+}	
+/* End Content */
+
+
+/* Sidebar */
+.sidebar li h3,.sidebar li h3 label {
+	font-family:Tahoma, Helvetica, Arial, sans-serif;
+	font-weight:bold;
+	font-size:14px;
+	text-transform:uppercase;
+}
+.sidebar ul li ul li {	border-top: 1px solid #BFBCA5;
+}.sidebar li a {
+	color:#1F1E17;
+}
+.sidebar li a:hover {	background:white;
+	color:#901808;
+}
+.sidebar .textwidget a, .sidebar #calendar_wrap a, .sidebar #recentcomments a,
+.sidebar #akismetwrap a, .sidebar #get_recent_comments_wrap a {
+	color:#901808;
+}/* restores normal link behaviour to specific widgets */
+.sidebar .textwidget a:visited, .sidebar #calendar_wrap a:visited, .sidebar #recentcomments a:hover,
+.sidebar #akismetwrap a:visited, .sidebar #get_recent_comments_wrap a:visited {
+	color:#B56554;
+}/* restores normal link behaviour to specific widgets */
+.sidebar .textwidget a:hover, .sidebar #calendar_wrap a:hover, .sidebar #recentcomments a:hover,
+.sidebar #akismetwrap a:hover, .sidebar #get_recent_comments_wrap a:hover {
+	background:transparent;
+}/* restores normal link behaviour to specific widgets */
+/* End Sidebar */
+
+
+/* Forms */
+input {
+	border:1px solid #bababa;
+}
+textarea {
+	border:1px solid #bababa;
+}
+#submit, #searchsubmit {
+	border:1px solid #7F7D6E;
+	background:#acacac url('../images/button_7F7D6E.png') repeat-x bottom;
+}
